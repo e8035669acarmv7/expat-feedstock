@@ -57,7 +57,8 @@ outputs:
       run_exports:
         # changes soname at major versions, default settings OK
         # https://abi-laboratory.pro/tracker/timeline/expat/
-        - {{ pin_subpackage('libexpat') }}
+        # - {{ pin_subpackage('libexpat') }}
+        - {{ pin_subpackage('expat') }}
       ignore_run_exports_from:
         # This package needs the compiler for the tests, but the executable
         # does not link to libstdc++.so
